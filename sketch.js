@@ -5,14 +5,13 @@ let poses = [];
 
 function setup() {
     // esses parametro aqui sao melhores na resolucao 360x540 ou 540x360 
-    createCanvas(1280, 853);
+    createCanvas(360, 540);
     
-    img = createImg('data/foto_06.jpeg', imageReady);
-    // set the image size to the size of the canvas
+    img = createImg('data/foto_01.jpeg', imageReady);
     img.size(width, height);
 
-    img.hide(); // hide the image in the browser
-    frameRate(1); // set the frameRate to 1 since we don't need it to be running quickly in this case
+    img.hide(); 
+    frameRate(1); 
 }
 
 function imageReady(){
